@@ -8,7 +8,7 @@ class Program
         float sum = 0;
         float average = 0;
         float largestNumber = 0;
-        float input = -1;
+        float input = -2;
 
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
         while (input != 0)
