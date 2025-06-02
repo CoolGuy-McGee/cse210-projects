@@ -10,7 +10,7 @@ public class Scripture
     private string _userInput = "NULL";
 
     //List<string> _test;
-    Reference _reference;
+    private Reference _reference;
 
 
     public Scripture(string text, string book, int chapter, int startVerse)
