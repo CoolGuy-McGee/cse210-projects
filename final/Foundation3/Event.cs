@@ -6,11 +6,11 @@ public class Event
     private string _description;
     private DateOnly _date;
     private TimeOnly _time;
-    private string _address;
+    private Address _address;
     private string _type;
     private string _typeMessage;
 
-    public Event(string title, string description, DateOnly date, TimeOnly time, string address)
+    public Event(string title, string description, DateOnly date, TimeOnly time, Address address)
     {
         _title = title;
         _description = description;
@@ -35,7 +35,7 @@ public class Event
         Console.WriteLine($"\nYou are invited! - {_title}");
         Console.WriteLine($"What - {_description} ");
         Console.WriteLine($"When - {_date} at {_time}");
-        Console.WriteLine($"Where - {_address}");
+        Console.WriteLine($"Where - {_address.GetAddress()}");
     }
 
     public void FullDetails()
@@ -43,7 +43,7 @@ public class Event
         Console.WriteLine($"\nYou are invited! - {_title} {_type}");
         Console.WriteLine($"What - {_description} {_typeMessage} ");
         Console.WriteLine($"When - {_date} at {_time}");
-        Console.WriteLine($"Where - {_address}");
+        Console.WriteLine($"Where - {_address.GetAddress()}");
     }
 
     public void ShortDescription()

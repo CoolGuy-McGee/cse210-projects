@@ -2,7 +2,7 @@ public class Outdoor : Event
 {
     private string _weatherStatement;
 
-    public Outdoor(string title, string description, DateOnly date, TimeOnly time, string address) : base(title, description, date, time, address)
+    public Outdoor(string title, string description, DateOnly date, TimeOnly time, Address address) : base(title, description, date, time, address)
     {
         DetermineWeather(GetEventDate());
         SetEventType("Outdoor Gathering", $"{_weatherStatement}");
