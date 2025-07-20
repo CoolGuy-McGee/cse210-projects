@@ -12,7 +12,7 @@ class Program
         Console.WriteLine($"Number of Comments: {currentVid.GetCommentCount()}");
         for (int i = 0; i < length; i++)
         {
-            Console.WriteLine($"Comment {i + 1}: {currentVid.comments[i]._username} - {currentVid.comments[i]._commentText}");
+            Console.WriteLine($"Comment {i + 1}: {currentVid._comments[i]._username} - {currentVid._comments[i]._commentText}");
         }
     }
 

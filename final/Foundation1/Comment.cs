@@ -8,6 +8,4 @@ public class Comment
         _username = name;
         _commentText = text;
     }
-
-
 }
