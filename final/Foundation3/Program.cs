@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Outdoor.cs (line 12) I made a creative bit for the weather message. I based the message on the season the date of the event occurs.
+
         Console.WriteLine($"---Lecture Demo---");
         Lecture lecture = new Lecture("Programming with Classes - Inheritance", "Continuing our series of lectures on Programming with Classes, this week we discuss Inheritance and how it is used.", new DateOnly(2025, 07, 15), new TimeOnly(14, 30), new Address("Lecture Hall 210", "BYU-I", "ID"), "Dalton Broderson", 150);
 
@@ -19,8 +21,6 @@ class Program
         reception.ShortDescription();
         reception.FullDetails();
         Console.WriteLine($"--------------------");
-
-        // Outdoor.cs (line 12) I made a creative bit for the weather message. I based the message on the season the date of the event occurs.
 
         Console.WriteLine($"---Outdoor Demo---");
         Outdoor winterEvent1 = new Outdoor("(Winter 1 Event) New Year's Day Party", "I will be busy on New Year's Eve so visit me next year!", new DateOnly(2026, 01, 01), new TimeOnly(00, 00), new Address("My House", "Party City", "WI"));
