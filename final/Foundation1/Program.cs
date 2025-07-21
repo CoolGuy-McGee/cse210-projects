@@ -6,13 +6,13 @@ class Program
     {
         int length = currentVid.GetCommentCount();
         Console.WriteLine();
-        Console.WriteLine($"Title: {currentVid._title}");
-        Console.WriteLine($"Author: {currentVid._author}");
-        Console.WriteLine($"Length (sec): {currentVid._length}");
+        Console.WriteLine($"Title: {currentVid.GetTitle()}");
+        Console.WriteLine($"Author: {currentVid.GetAuthor()}");
+        Console.WriteLine($"Length (sec): {currentVid.GetLength()}");
         Console.WriteLine($"Number of Comments: {currentVid.GetCommentCount()}");
         for (int i = 0; i < length; i++)
         {
-            Console.WriteLine($"Comment {i + 1}: {currentVid._comments[i]._username} - {currentVid._comments[i]._commentText}");
+            Console.WriteLine($"Comment {i + 1}: {currentVid.GetComments()[i].GetUsername()} - {currentVid.GetComments()[i].GetText()}");
         }
     }
 

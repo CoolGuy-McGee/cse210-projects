@@ -2,11 +2,11 @@ using System.ComponentModel.DataAnnotations;
 
 public class Video
 {
-    public string _title;
-    public string _author;
-    public int _length;
-    public int _commentCount = 0;
-    public List<Comment> _comments = new List<Comment>();
+    private string _title;
+    private string _author;
+    private int _length;
+    private int _commentCount = 0;
+    private List<Comment> _comments = new List<Comment>();
 
     public Video(string title, string author, int length)
     {
@@ -15,9 +15,29 @@ public class Video
         _length = length;
     }
 
+    public string GetTitle()
+    {
+        return _title;
+    }
+
+    public string GetAuthor()
+    {
+        return _author;
+    }
+
+    public int GetLength()
+    {
+        return _length;
+    }
+
     public int GetCommentCount()
     {
         return _commentCount;
+    }
+
+    public List<Comment> GetComments()
+    {
+        return _comments;
     }
 
     public void AddComment(Comment comment)
