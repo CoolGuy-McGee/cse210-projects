@@ -1,2 +1,0 @@
-
-ChecklistGoal|Attend the temple|Attend and perform any ordinance|50|500|3|0|
